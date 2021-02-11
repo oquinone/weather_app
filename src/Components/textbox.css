@@ -1,0 +1,14 @@
+#api-data{
+    margin: 30px 50px 0px 50px;
+    width: auto;
+    height: 500px;
+    /* background-color: blue; */
+}
+
+html{
+    background: url("../Images/sky\ photo.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
