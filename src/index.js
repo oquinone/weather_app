@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
 import Textbox from './Components/textBox';
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <Textbox/>
-  // </React.StrictMode>,
   <Textbox/>,
-  // <App/>,
   document.getElementById('root')
 );
 

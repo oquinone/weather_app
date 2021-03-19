@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { Alert } from '@material-ui/core';
-import { AlertTitle } from '@material-ui/core';
+import { Alert } from '@material-ui/lab';
+import { AlertTitle } from '@material-ui/lab';
 
-class Alert extends Component {
-    // state = {  }
+class AlertCom extends Component {
     render() { 
-        return (<div>
+        return (
+        <div>
             <Alert severity="error">
                 <AlertTitle>Error</AlertTitle>
                 <strong>No Location Found</strong>
-                </Alert>
+            </Alert>
         </div>  );
     }
 }
  
-export default Alert;
+export default AlertCom;

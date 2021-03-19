@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import { CardMedia }  from '@material-ui/core';
 import Slider from "react-slick";
+// import AlertComp from './alert.jsx';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './textbox.css'
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     search:{
         margin: "15px 38% 0px 38%",
         width: "300px",
-        backgroundColor: 'red'
+        backgroundColor: '#F3EC93'
     },
     cards:{
         display: 'flex',
@@ -33,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cardContainer:{
         width: "200px",
+        border: "none"
     },
     city:{
         fontSize: '21px',
@@ -84,6 +86,7 @@ function TextBox(){
     const [query, setQuery] = useState('')
     const [weather, setWeather] = useState([])
     const classes = useStyles();
+    
     const settings = {
       dots: true,
       infinite: true,
@@ -93,6 +96,7 @@ function TextBox(){
       beforeChange: function(currentSlide, nextSlide) {
         console.log("before change", currentSlide, nextSlide);
       },
+
       afterChange: function(currentSlide) {
         console.log("after change", currentSlide);
       }
@@ -135,6 +139,7 @@ function TextBox(){
 
     function cityNotFound(){
         alert("Whoops! That city doesn't exist.");
+        // return <AlertComp/>
     }
 
     function numSlidesToShow(){
